@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --defaultColor: #6c757d;
+    --coral: #ff7f50;
+    --poppins: 'Poppins', sans-serif;
+    --transition: 0.4s all ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--defaultColor);
+    font-size: 1.8rem;
+    line-height: 28px;
+    letter-spacing: 0.7px;
+}
+
+a,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.title-3 {
+    color: var(--coral);
+    font-size: 18px;
+    font-family: var(--poppins);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title-2 {
+    color: var(--black);
+    font-size: 40px;
+    letter-spacing: 0;
+    margin-bottom: 40px;
+}
+
+.coralText {
+    color: var(--coral);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar .navbar-brand {
+    color: var(--coral);
+    font-size: 46px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font: 18px;
+    padding: 28px 15px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+    color: var(--coral);
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 100px;
+    right: 5%;
+    bottom: 0;
+    left: 5%;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    font-size: 54px;
+    font-family: var(--poppins);
+    font-weight: bold;
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h6 {
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.carousel .carousel-control-next,
+.carousel .carousel-control-prev {
+    width: 50px;
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon,
+.carousel .carousel-control-prev .carousel-control-prev-icon {
+    background-color: var(--black);
+    background-size: 51%;
+    width: 50px;
+    height: 45px;
+    background-position: 40%;
+}
+
+.carousel .carousel-control-next .carousel-control-next-icon {
+    background-position: 60%;
+}
+
+.roomCard {
+    background: var(--white);
+    transition: var(--transition);
+    margin: 30px 10px;
+}
+
+.roomCard:hover {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.roomCard .roomImg {
+    overflow: hidden;
+}
+
+.roomCard .roomImg img {
+    transform: var(--transition);
+}
+
+.roomCard:hover .roomImg img {
+    transform: scale(1.1);
+}
+
+.roomCard .roomCon {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 1px;
+}
+
+.title-4 {
+    color: var(--black);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.facilityCard {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.facilityCard img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.facilityCard p {
+    color: var(--black);
+    letter-spacing: 2px;
+}
+
+.galleryCard {
+    position: relative;
+}
+
+.galleryCard::before {
+    content: '';
+    transition: var(--transition);
+}
+
+.galleryCard:hover::before {
+    content: '';
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.reviewCard .reviewCon:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 4px solid var(--coral);
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.reviewCard .reviewCon:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 4px solid var(--coral);
+    border-top: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.userFace img {
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 99%;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.reviewCard {
+    text-align: center;
+}
+
+.reviewCard .reviewCon {
+    max-width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 25px 35px;
+    position: relative;
+}
+
+footer {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 24px;
+    background: rgba(0, 0, 0, 0.8);
+    padding-top: 40px;
+    padding-bottom: 25px;
+}
+
+footer h4 {
+    color: var(--white);
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer .btn {
+    color: var(--white);
+    font-size: 14px;
+    background: var(--coral);
+    border-radius: 99px;
+    padding: 7px 25px;
+}
+
+footer .btn:hover {
+    color: var(--defaultColor);
+    background: var(--white);
+}
+
+footer ul li a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top: 35px;
+    margin-top: 25px;
+}
+
+@media only screen and (max-width: 767.98px) {
+    .navbar {
+        background: white;
+    }
+
+    .navbar .navbar-toggler {
+        border: none;
+    }
+
+    .navbar .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    .navbar .navbar-brand {
+        color: var(--coral);
+    }
+
+    .navbar .navbar-nav {
+        padding-top: 20px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link {
+        color: var(--defaultColor);
+        padding: 8px 5px;
+    }
+
+    .navbar .navbar-nav .nav-item .nav-link.active {
+        color: var(--coral);
+    }
+
+}
